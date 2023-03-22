@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CounterView from "@/views/CounterView.vue";
 import GroceryView from "@/views/GroceryView.vue";
+import SliderViewVue from "@/views/SliderView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,12 @@ const router = createRouter({
       name: "grocery",
       meta: { title: "grocery - Pinia Store" },
       component: GroceryView,
+    },
+    {
+      path: "/slider",
+      name: "slider",
+      meta: { title: "Slider - Component" },
+      component: SliderViewVue,
     },
   ],
 });
