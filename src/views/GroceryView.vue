@@ -24,6 +24,7 @@ const store = groceryStore();
       :key="item.id"
     >
       {{ item }}
+
       <div class="flex">
         <button
           class="flex flex-shrink-0 items-center justify-center bg-red-500 text-white py-1 px-4 m-2 rounded-md hover:bg-red-600 font-bold transition-all"
@@ -33,6 +34,7 @@ const store = groceryStore();
           <span>Remove</span>
           <Icon icon="humbleicons:trash" />
         </button>
+
         <button
           class="flex flex-shrink-0 items-center justify-center bg-green-500 text-white py-1 px-4 m-2 rounded-md hover:bg-green-600 font-bold transition-all"
           @click="store.update(item.id)"
