@@ -3,6 +3,7 @@ import CounterView from "@/views/CounterView.vue";
 import GroceryView from "@/views/GroceryView.vue";
 import SliderView from "@/views/SliderView.vue";
 import DragAndDropView from "@/views/DragAndDropView.vue";
+import GrapesJSViewVue from "@/views/GrapesJSView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,12 @@ const router = createRouter({
       name: "draganddrop",
       meta: { title: "Drag and drop - Component" },
       component: DragAndDropView,
+    },
+    {
+      path: "/grapesjs",
+      name: "grapesjs",
+      meta: { title: "GrapesJS - Library" },
+      component: GrapesJSViewVue,
     },
   ],
 });
